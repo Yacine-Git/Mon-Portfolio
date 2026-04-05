@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Veille technologique — ALLAB Yacine</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div id="progress" class="progress"></div>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="dot"></span><span>ALLAB Yacine</span></a>
+      <nav id="navLinks" class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="parcours.html">Mon parcours</a>
+        <a href="entreprise.html">Mon entreprise</a>
+        <a href="competences.html">Mes compétences</a>
+        <a class="active" href="veille.html">Veille technologique</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="actions">
+        <button id="burger" class="burger" type="button"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page-title reveal">
+      <span class="badge">📰 Ma veille technologique</span>
+      <h1>Sujets technologiques</h1>
+    </div>
+
+    <!-- HERO / INTRO -->
+    <section class="hero-photo reveal">
+      <div class="veille-hero card">
+        <div class="block">
+          <h3>🎯 Objectif de ma veille</h3>
+          <p>
+              L'objectif d'une veille technologique est de surveiller de manière 
+              systématique les innovations, les nouvelles tendances et les évolutions de l'écosystème numérique pour ne pas être dépassé.
+          </p>
+          <div class="pills pills-dark">
+            <span class="pill"><strong>Fréquence :</strong> quotidienne</span>
+            <span class="pill"><strong>Format :</strong> notes + synthèses</span>
+            <span class="pill"><strong>Usage :</strong> BTS / alternance</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         ARTICLES DE VEILLE
+         ===================================================== -->
+<section class="reveal" style="padding-top: 0;">
+  <div class="card block veille-section">
+    <h3>📰 Synthèses d'articles récents</h3>  
+
+    <div class="veille-cards-grid">
+
+      <!-- ARTICLE 1 -->
+      <article class="veille-card-item">
+        <div class="veille-card-image">
+          <img src="assets/img/vpn-block.jpg" alt="Article cybersécurité" loading="lazy">
+          <span class="veille-badge cyber">VPN</span>
+          <span class="veille-date">Fevrier 2026</span>
+        </div>
+
+        <div class="veille-card-content">
+          <div class="veille-tags">
+            <span>#VPN</span>
+            <span>#Gouvernement</span>
+          </div>
+
+          <h4>La France veut bloquer les VPN : oui, mais pour protéger les mineurs (IT-Connect)</h4>
+
+          <p>
+              Le gouvernement français envisage de contraindre les fournisseurs de VPN à vérifier 
+              l'âge de leurs utilisateurs afin d'empêcher les mineurs de contourner les restrictions d'accès aux réseaux sociaux et aux sites pour adultes.
+          </p>
+
+          <div class="veille-mini-box">
+            <b>⚡ Impact</b>
+            <p><strong>- Vie privée : </strong>La fin de l'anonymat pour les utilisateurs de VPN. </p>
+            <p>- <strong>Sécurité informatique :</strong> Cela aura pour risque de créer des failles. En tentant de bloquer ou de 
+              filtrer les flux chiffrés des VPN, on fragilise des outils essentiels au télétravail et à la protection des entreprises contre le cyberespionnage.</p>
+          </div>
+
+          <div class="veille-card-actions">
+            <button class="veille-action-btn" type="button" onclick="toggleArticle('article1')">Lire plus</button>
+            <div class="veille-sources">
+              <a href="https://www.it-connect.fr/la-france-veut-bloquer-les-vpn-oui-mais-pour-proteger-les-mineurs/" target="_blank" rel="noopener">Source 1</a>
+              <a href="https://www.frandroid.com/culture-tech/politique/2961635_les-vpn-cest-le-prochain-sujet-sur-ma-liste-apres-les-reseaux-sociaux-le-gouvernement-a-une-nouvelle-cible" target="_blank" rel="noopener">Source 2</a>
+            </div>
+          </div>
+
+          <div id="article1" class="veille-hidden-content">
+            <p>
+L'article de IT-Connect détaille une nouvelle orientation du gouvernement français dans sa stratégie de protection des mineurs sur Internet. 
+Après avoir voté l'interdiction des réseaux sociaux pour les moins de 15 ans 
+(sauf autorisation parentale), les autorités s'attaquent désormais aux outils de contournement, et plus particulièrement aux VPN (Réseaux Privés Virtuels).
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- ARTICLE 2 -->
+      <article class="veille-card-item">
+        <div class="veille-card-image">
+          <img src="assets/img/nextcloud.jpg" alt="Nextcloud" loading="lazy">
+          <span class="veille-badge systeme">Cloud</span>
+          <span class="veille-date">Février 2026</span>
+        </div>
+
+        <div class="veille-card-content">
+          <div class="veille-tags">
+            <span>#Nextcloud</span>
+            <span>#Gouvernement</span>
+            <span>#RemoteWork</span>
+          </div>
+
+          <h4>Comment l’Éducation nationale a déployé Nextcloud pour gérer le partage de fichiers (L'Usine Digitale)</h4>
+
+          <p>
+            Une vulnérabilité critique dans WSUS pourrait permettre une exécution de code à distance
+            sur le serveur de mises à jour. Comme WSUS distribue les correctifs du parc,
+            sa compromission représente un risque majeur.
+          </p>
+
+          <div class="veille-mini-box">
+            <b>⚡ Impact</b>
+            <p><strong>- Souveraineté des données : </strong>les documents pédagogiques, administratifs et les données personnelles des agents ne sont plus stockés chez des prestataires soumis à des juridictions étrangères.</p>
+            <p><strong>- Indépendance stratégique et financière :</strong>le ministère réduit sa dépendance aux géants américains (Microsoft, Google) et lui redonne un pouvoir de négociation.</p>
+          </div>
+
+          <div class="veille-card-actions">
+            <button class="veille-action-btn" type="button" onclick="toggleArticle('article2')">Lire plus</button>
+            <div class="veille-sources">
+              <a href="https://www.usine-digitale.fr/informatique/cloud/souverainete-numerique-comment-leducation-nationale-a-deploye-nextcloud-pour-gerer-le-partage-de-fichiers.3NKYN6NT5JDPHEGKCJQKULBMUQ.html" target="_blank" rel="noopener">Source</a>
+            </div>
+          </div>
+
+          <div id="article2" class="veille-hidden-content">
+            <p>
+L'article relate le succès du projet "Nuage", une plateforme de stockage et de partage de fichiers basée sur la solution open source Nextcloud, déployée par le ministère de l'Éducation nationale.
+
+<br>L'objectif : Fournir aux enseignants et aux personnels administratifs un outil collaboratif moderne (alternative à Google Drive ou OneDrive) tout en garantissant que les données restent sur des serveurs maîtrisés par l'État français.
+
+<br>L'ampleur : C'est l'un des plus gros déploiements au monde pour Nextcloud. Le projet est passé d'une phase de test à une généralisation massive, visant à terme plus d'un million d'utilisateurs.
+
+<br>La stratégie : Le ministère a fait le choix du logiciel libre pour éviter l'enfermement propriétaire (vendor lock-in) et répondre aux exigences de la circulaire "Cloud au Centre", qui incite les administrations à privilégier des solutions souveraines.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- ARTICLE 3 -->
+      <article class="veille-card-item">
+        <div class="veille-card-image">
+          <img src="assets/img/ia-gener.jpg" alt="Article réseau DNS DHCP" loading="lazy">
+          <span class="veille-badge reseau">IA</span>
+          <span class="veille-date">Fevrier 2026</span>
+        </div>
+
+        <div class="veille-card-content">
+          <div class="veille-tags">
+            <span>#IA</span>
+            <span>#Malware</span>
+            <span>#Prompt</span>
+
+          </div>
+
+          <h4>Injection de prompt : comprendre la faille structurelle qui fait trembler l'IA générative (ZDNet)</h4>
+
+          <p>
+            L'injection de prompt est une technique de manipulation qui consiste à envoyer des instructions spécifiques 
+            à une IA (comme ChatGPT, Claude ou Gemini) pour la forcer à ignorer ses règles de sécurité initiales.
+
+          <div class="veille-mini-box">
+            <b>⚡ Impact</b>
+            <p><strong> - Vol de données : </strong>Récupération d'informations confidentielles ou de clés API.</p>
+            <p><strong>- Désinformation : </strong>Détournement de l'IA pour produire des discours haineux ou des fake news.</p>
+          </div>
+
+          <div class="veille-card-actions">
+            <button class="veille-action-btn" type="button" onclick="toggleArticle('article3')">Lire plus</button>
+            <div class="veille-sources">
+              <a href="https://www.zdnet.fr/lexique-it/injection-de-prompt-comprendre-la-faille-structurelle-qui-fait-trembler-lia-generative-en-un-clic-490222.htm" target="_blank" rel="noopener">Source</a>
+            </div>
+          </div>
+
+          <div id="article3" class="veille-hidden-content">
+            <p>
+             Cet article explique que l'injection de prompt est une faille structurelle des IA génératives, 
+             causée par leur incapacité à distinguer les instructions des simples données.
+            Cette vulnérabilité permet à des attaquants de détourner les règles de sécurité, de manière directe ou indirecte, pour voler des informations ou forcer l'IA à agir de façon malveillante.
+
+Il conclut qu'il n'existe pas encore de solution technique miracle, car cette faille est intrinsèque au fonctionnement actuel des modèles de langage.
+            </p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script>
+  function toggleArticle(id) {
+    const el = document.getElementById(id);
+    el.classList.toggle("open");
+  }
+</script>
+  <style>
+/* ====== PAGE VEILLE VERSION CARTES ====== */
+.veille-section{
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.articles-intro{
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 24px;
+  line-height: 1.7;
+  max-width: 70ch;
+}
+
+.veille-cards-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.veille-card-item{
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(24,35,71,.72);
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0,0,0,.28);
+  transition: .25s ease;
+}
+
+.veille-card-item:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 22px 55px rgba(0,0,0,.35);
+}
+
+.veille-card-image{
+  position: relative;
+  height: 210px;
+  overflow: hidden;
+}
+
+.veille-card-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.veille-card-image::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(180deg, rgba(0,0,0,.05) 45%, rgba(0,0,0,.58));
+}
+
+.veille-badge{
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid rgba(255,255,255,.10);
+}
+
+.veille-badge.cyber{
+  background: rgba(249,115,22,.95);
+  color: white;
+}
+
+.veille-badge.systeme{
+  background: rgba(59,130,246,.95);
+  color: white;
+}
+
+.veille-badge.reseau{
+  background: rgba(16,185,129,.95);
+  color: white;
+}
+
+.veille-date{
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  background: rgba(0,0,0,.45);
+  border: 1px solid rgba(255,255,255,.10);
+  backdrop-filter: blur(8px);
+}
+
+.veille-card-content{
+  padding: 18px;
+}
+
+.veille-tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.veille-tags span{
+  font-size: 11px;
+  color: rgba(255,255,255,.88);
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 999px;
+  padding: 5px 9px;
+}
+
+.veille-card-content h4{
+  font-size: 18px;
+  line-height: 1.45;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+
+.veille-card-content p{
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.veille-mini-box{
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.03);
+}
+
+.veille-mini-box b{
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: var(--accent);
+}
+
+.veille-card-actions{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,.08);
+  flex-wrap: wrap;
+}
+
+.veille-action-btn{
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.04);
+  color: var(--text);
+  font-weight: 700;
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.veille-action-btn:hover{
+  background: rgba(255,255,255,.08);
+}
+
+.veille-sources{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.veille-sources a{
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 700;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+.veille-hidden-content{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .3s ease;
+}
+
+.veille-hidden-content.open{
+  max-height: 200px;
+  margin-top: 14px;
+}
+
+@media (max-width: 920px){
+  .veille-cards-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .veille-card-image{
+    height: 190px;
+  }
+}
+  </style>
+</body>
+</html>

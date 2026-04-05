@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ALLAB Yacine — Mon Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div id="progress" class="progress"></div>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="dot"></span>
+        <span>ALLAB Yacine</span>
+      </a>
+
+      <nav id="navLinks" class="nav-links">
+        <a class="active" href="index.html">Accueil</a>
+        <a href="parcours.html">Mon parcours</a>
+        <a href="entreprise.html">Mon entreprise</a>
+        <a href="competences.html">Mes compétences</a>
+        <a href="veille.html">Veille technologique</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="actions">
+        <button id="burger" class="burger" type="button" aria-label="Ouvrir le menu">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+<main>
+  <section class="hero hero-bg">
+    <div class="container">
+      <div class="reveal">
+        <span class="badge">💻 Bienvenue sur mon Portfolio</span>
+        <h1 class="h-title">ALLAB Yacine</h1>
+        <p class="h-sub">Expertise en Infrastructures Réseaux, Cybersécurité et Administration Système.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        
+        <aside class="big-bubble-dark profile-aside reveal">
+          <div class="bubble-content-padding">
+            <div class="about-avatar">
+              <img src="./assets/img/moi2.jpg" alt="Photo de Yacine ALLAB">
+            </div>
+            <div class="about-name">
+              <h2>ALLAB Yacine</h2>
+              <p class="accent-text">Alternant technicien Systèmes & Réseaux</p>
+            </div>
+            <div class="about-info-list">
+              <div class="info-item"><span>📍</span> Moselle / Luxembourg</div>
+              <div class="info-item"><span>💼</span> ArcelorMittal Belval (Luxembourg)</div>
+              <div class="info-item"><span>🎓</span> BTS SIO SISR (Bac+2)</div>
+            </div>
+            <a class="about-cv-btn" href="assets/cv/ALLAB_Yacine_CV.pdf" target="_blank">📄 Télécharger mon CV</a>
+          </div>
+        </aside>
+
+        <div class="about-main-content">
+          
+          <article class="big-bubble-dark reveal">
+            <div class="bubble-content-padding">
+              <div class="bubble-header-mini">
+                <span class="mini-ico">👤</span>
+                <h2>Mon Profil</h2>
+              </div>
+              <p class="bubble-text">
+                Étudiant en deuxième année de BTS SIO option SISR au <strong>Pôle Formation UIMM de Yutz,</strong> j'occupe actuellement un poste d'alternant chez <b>ArcelorMittal Luxembourg</b>. 
+                Mon quotidien se situe à la confluence de l'ingénierie logicielle et des réalités industrielles, me permettant de transformer des besoins métiers complexes en solutions techniques fiables et sécurisées.
+              </p>
+            </div>
+          </article>
+
+          <article class="big-bubble-dark reveal" style="margin-top: 30px;">
+            <div class="bubble-content-padding">
+              <div class="bubble-header-mini">
+                <span class="mini-ico">🎓</span>
+                <h2>Le BTS SIO</h2>
+              </div>
+              <p class="bubble-text">
+                Le brevet de technicien supérieur <b>Services Informatiques aux Organisations</b> est un diplôme d'État formant aux enjeux de la transformation numérique.
+              </p>
+              <div class="bubble-grid">
+                <div class="bubble-box">
+                  <h3 class="box-title">📊 Organisation</h3>
+                  <ul class="clean-list">
+                    <li>2 ans | 120 crédits ECTS</li>
+                    <li>Cursus en alternance (2 semaines en formation/ 2 semaines en entreprise)</li>
+                    <li>Expertise en systèmes et réseaux</li>
+                  </ul>
+                </div>
+                <div class="bubble-box">
+                  <h3 class="box-title">📚 Programme</h3>
+                  <ul class="clean-list">
+                    <li>Culture Économique, Juridique et Managériale</li>
+                    <li>Mathématiques Appliquées et algorithmie</li>
+                    <li>Anglais Technique</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="big-bubble-dark reveal" style="margin-top: 30px;">
+            <div class="bubble-content-padding">
+              <div class="bubble-header-mini">
+                <span class="mini-ico">⚙️</span>
+                <h2>Spécialité SISR (Solutions d’Infrastructure, Systèmes et Réseaux)</h2>
+              </div>
+              <p class="bubble-text">
+                L’option <b>Solutions d’Infrastructure, Systèmes et Réseaux</b> se concentre sur la conception et la maintenance des architectures informatiques.
+              </p>
+                <div class="bubble-box">
+                  <h3 class="box-title">📚 Tronc commun</h3>
+                  <ul class="clean-list">
+                    <li>Administration systèmes</li>
+                    <li>Réseaux</li>
+                    <li>Cybersécurité</li>
+                  </ul>
+                </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> ALLAB Yacine — Portfolio 
+    </div>
+  </footer>
+</main>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

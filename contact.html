@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — ALLAB Yacine</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div id="progress" class="progress"></div>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="dot"></span><span>ALLAB Yacine</span></a>
+      <nav id="navLinks" class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="parcours.html">Mon parcours</a>
+        <a href="entreprise.html">Mon entreprise</a>
+        <a href="competences.html">Mes compétences</a>
+        <a href="veille.html">Veille technologique</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="actions">
+        <button id="burger" class="burger" type="button"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+<main class="container">
+  <section class="contact-hero reveal">
+    <div class="page-title">
+      <span class="badge">📩 Contact</span>
+      <h1>On reste en contact ?</h1>
+      <p>Une opportunité, une question ou simplement envie de discuter de tech ?<br>
+         Réponse garantie sous 24h à 48h.</p>
+    </div>
+  </section>
+
+  <section class="contact-grid">
+    
+    <aside class="big-bubble-dark reveal">
+      <div class="bubble-content-padding">
+        <div class="bubble-header-mini">
+          <span class="mini-ico">📎</span>
+          <h2>Mes Coordonnées</h2>
+        </div>
+        
+        <div class="contact-list-clean">
+          <div class="contact-item-row">
+            <div class="c-ico">📧</div>
+            <div class="c-info">
+              <span>Email</span>
+              <p><a href="mailto:yacine.allab57@gmail.com">yacine.allab57@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item-row">
+            <div class="c-ico">🔗</div>
+            <div class="c-info">
+              <span>LinkedIn</span>
+              <p><a href="https://www.linkedin.com/in/yacine-allab-82a026275/" target="_blank">Profil Professionnel</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item-row">
+            <div class="c-ico">📍</div>
+            <div class="c-info">
+              <span>Localisation</span>
+              <p>Moselle / Luxembourg</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-actions-gap">
+          <a class="about-cv-btn" href="assets/cv/ALLAB_Yacine_CV.pdf" target="_blank">📄 Télécharger mon CV</a>
+          <a class="btn-outline-small" href="index.html">Retour à l'accueil</a>
+        </div>
+      </div>
+    </aside>
+
+    <div class="big-bubble-dark reveal">
+      <div class="bubble-content-padding">
+        <div class="bubble-header-mini">
+          <span class="mini-ico">✉️</span>
+          <h2>Envoyez-moi un message</h2>
+        </div>
+
+        <form id="contactForm" class="modern-dark-form">
+          <div class="input-row">
+            <div class="input-group">
+              <label for="name">Votre Nom</label>
+              <input id="name" type="text" placeholder="Ex: Nom Prénom" required />
+            </div>
+            <div class="input-group">
+              <label for="email">Votre Email</label>
+              <input id="email" type="email" placeholder="azerty@exemple.fr" required />
+            </div>
+          </div>
+          
+          <div class="input-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="6" placeholder="Comment puis-je vous aider ?" required></textarea>
+          </div>
+          
+          <button class="submit-bubble-btn" type="submit">
+            Envoyer le message 🚀
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © <span id="year"></span> ALLAB Yacine — Portfolio
+  </footer>
+</main>
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
