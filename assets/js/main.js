@@ -43,12 +43,12 @@ const form = $("#contactForm");
 if (form) {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    const name = $("#name").value.trim();
-    const email = $("#email").value.trim();
+    // const name = $("#name").value.trim();
+    // const email = $("#email").value.trim();
     const message = $("#message").value.trim();
 
-    const subject = encodeURIComponent(`Contact Portfolio - ${name}`);
-    const body = encodeURIComponent(`Nom: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+    const subject = encodeURIComponent(`Contact via le Portfolio ${name}`);
+    const body = encodeURIComponent(`\nMessage:\n${message}`);
 
     // Remplace par ton email
     const to = "yacine.allab57@gmail.com";
