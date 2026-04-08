@@ -3346,3 +3346,96 @@ main.container {
     }
     .org-services-grid::before { display: none; }
 }
+
+/* --- BOUTON FLÈCHE --- */
+.view-project-btn {
+    background: none;
+    border: none;
+    color: var(--accent);
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+    padding: 5px 0;
+}
+.view-project-btn span { transition: transform 0.3s; }
+.view-project-btn:hover span { transform: translateX(5px); }
+
+/* --- MODALE STYLE DASHBOARD --- */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(7, 10, 22, 0.95);
+    backdrop-filter: blur(10px);
+    display: none; /* Caché par défaut */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 20px;
+}
+
+.modal-container {
+    background: #111c35;
+    width: 100%;
+    max-width: 900px;
+    max-height: 90vh;
+    border-radius: 24px;
+    border: 1px solid rgba(255,255,255,0.1);
+    position: relative;
+    overflow-y: auto;
+    animation: fadeInModal 0.3s ease-out;
+}
+
+@keyframes fadeInModal {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255,255,255,0.05);
+    border: none;
+    color: white;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.modal-content { padding: 40px; }
+
+.modal-header { margin-bottom: 30px; border-left: 4px solid var(--accent); padding-left: 20px; }
+.modal-header h2 { font-size: 28px; margin-bottom: 5px; }
+.modal-tag { color: var(--accent); font-size: 13px; font-weight: 800; text-transform: uppercase; }
+
+/* GRILLE DE LISIBILITÉ */
+.modal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.modal-card { 
+    background: rgba(255,255,255,0.03); 
+    padding: 20px; 
+    border-radius: 16px; 
+    border: 1px solid rgba(255,255,255,0.05); 
+}
+.modal-card.full { grid-column: span 2; }
+.modal-card h4 { color: var(--accent); margin-bottom: 12px; font-size: 16px; text-transform: uppercase; }
+.modal-card p { line-height: 1.6; color: var(--muted); font-size: 15px; }
+
+.modal-img { 
+    width: 100%; 
+    border-radius: 12px; 
+    margin-top: 15px; 
+    border: 1px solid rgba(255,255,255,0.1);
+    background: #000;
+}
+
+@media (max-width: 768px) { .modal-grid { grid-template-columns: 1fr; } .modal-card.full { grid-column: span 1; } }
+
+.big-bubble-dark strong {
+    color: var(--accent); /* Ou une couleur blanche brillante #fff */
+    font-weight: 600;
+}
